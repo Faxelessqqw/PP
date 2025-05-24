@@ -1,0 +1,92 @@
+def man():
+    print("Обработака от 11 до 50 включительно")
+    manYears=int(input("Ваш возраст: "))
+    if manYears>10 and manYears<15:
+        manCal=int(input("Кол. калорий в день: "))
+        if manCal>2199 and manCal<2801:
+            print("Норма, продолжай так же")
+        elif manCal<2200:
+            print(f"Чтобы получить минимальную норму вам нужно прибавить {2200-manCal} калорий")
+        elif manCal>2800:
+            print(f"Чтобы получить максимальную норму вам нужно убрать {manCal-2800} калорий")
+    if manYears>14 and manYears<19:
+        manCal=int(input("Кол. калорий в день: "))
+        if manCal>2499 and manCal<3201:
+            print("Норма, продолжать так же")
+        elif manCal<2500:
+            print(f"Чтобы получить минимальную норму вам нужно прибавить {2500-manCal} калорий")
+        elif manCal>3200:
+            print(f"Чтобы получить максимальную норму вам нужно убрать {manCal-3200} калорий")
+    if manYears>18 and manYears<31:
+        manCal=int(input("Кол. калорий в день: "))
+        if manCal>2399 and manCal<3001:
+            print("Норма, продолжать так же")
+        elif manCal<2400:
+            print(f"Чтобы получить минимальную норму вам нужно прибавить {2400-manCal} калорий")
+        elif manCal>3000:
+            print(f"Чтобы получить максимальную норму вам нужно убрать {manCal-3000} калорий") 
+    if manYears>30 and manYears<51:
+        manCal=int(input("Кол. калорий в день: "))
+        if manCal>2199 and manCal<2801:
+            print("Норма, продолжать так же")
+        elif manCal<2200:
+            print(f"Чтобы получить минимальную норму вам нужно прибавить {2200-manCal} калорий")
+        elif manCal>2800:
+            print(f"Чтобы получить максимальную норму вам нужно убрать {manCal-2800} калорий")  
+    if manYears>50 or manYears<11:            
+        print("Обработака от 11 до 50 включительно")
+                
+                
+                
+def woman():
+    print("Обработака от 11 до 50 включительно")
+    womanYears=int(input("Ваш возраст: "))
+    if womanYears>10 and womanYears<15:
+        womanCal=int(input("Кол. калорий в день: "))
+        if womanCal>1799 and womanCal<2401:
+            print("Норма, продолжай так же")
+        elif womanCal<1800:
+            print(f"Чтобы получить минимальную норму вам нужно прибавить {1800-womanCal} калорий")
+        elif womanCal>2400:
+            print(f"Чтобы получить максимальную норму вам нужно убрать {womanCal-2400} калорий")
+    if womanYears>14 and womanYears<19:
+        womanCal=int(input("Кол. калорий в день: "))
+        if womanCal>1999 and womanCal<2501:
+            print("Норма, продолжать так же")
+        elif womanCal<2000:
+            print(f"Чтобы получить минимальную норму вам нужно прибавить {2000-womanCal} калорий")
+        elif womanCal>2500:
+            print(f"Чтобы получить максимальную норму вам нужно убрать {womanCal-2500} калорий")
+    if womanYears>18 and womanYears<31:
+        womanCal=int(input("Кол. калорий в день: "))
+        if womanCal>1999 and womanCal<2401:
+            print("Норма, продолжать так же")
+        elif womanCal<2000:
+            print(f"Чтобы получить минимальную норму вам нужно прибавить {2000-womanCal} калорий")
+        elif womanCal>2400:
+            print(f"Чтобы получить максимальную норму вам нужно убрать {womanCal-2400} калорий") 
+    if womanYears>30 and womanYears<51:
+        womanCal=int(input("Кол. калорий в день: "))
+        if womanCal>1799 and womanCal<2201:
+            print("Норма, продолжать так же")
+        elif womanCal<1800:
+            print(f"Чтобы получить минимальную норму вам нужно прибавить {1800-womanCal} калорий")
+        elif womanCal>2200:
+            print(f"Чтобы получить максимальную норму вам нужно убрать {womanCal-2200} калорий") 
+            
+    if womanYears>50 or womanYears<11:            
+        print("Обработака от 11 до 50 включительно")            
+            
+            
+
+print("M-man  W-woman")
+
+while True:
+    pol=input("Ваш пол:")
+    if pol=="M" or pol=="m":
+        man()
+    
+    if pol=="W" or pol=="w":
+        woman() 
+    elif pol!="W" and pol!="w" and pol!="M" and pol!="m":
+        print("Для указания пола нужно ввести либо M-man либо W-woman")
